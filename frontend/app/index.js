@@ -1,26 +1,34 @@
-let img;
-let button;
+import Phaser from "phaser";
+import Koji from 'koji-tools';
 
-function setup() {
-  // make a full screen canvas
-  createCanvas(window.innerWidth, window.innerHeight);
-  img = loadImage(Koji.config.images.mouse); // Load the image
+const config = {
+  type: Phaser.AUTO,
+  parent: "phaser-scaffold",
+  width: window.innerWidth,
+  height: window.innerHeight,
+  scene: {
+    preload: preload,
+    create: create
+  }
+};
 
+const game = new Phaser.Game(config);
+
+function preload() {
+  this.load.image("logo", Koji.config.images.mouse);
 }
 
-function draw() {
-  // set the background color from the configuration options
-  background(Koji.config.colors.backgroundColor);
+function create() {
+  this.cameras.main.setBackgroundColor(Koji.config.colors.backgroundColor);
+  const logo = this.add.image((window.innerWidth / 2), 100, "logo");
+  this.add.text(20, 20, Koji.config.strings.content, { color: Koji.config.colors.textColor });
 
-  // format our text
-  textSize(24);
-  fill(Koji.config.colors.textColor);
-  textAlign(CENTER);
-
-  // print out our text
-  text(Koji.config.strings.content, window.innerWidth / 2, 100);
-
-  // setup an image to follow our mouse
-  let imageSize = 100;
-  image(img, mouseX - (imageSize / 2), mouseY - (imageSize / 2), imageSize, imageSize);
+  this.tweens.add({
+    targets: logo,
+    y: 450,
+    duration: 2000,
+    ease: "Power2",
+    yoyo: true,
+    loop: -1
+  });
 }

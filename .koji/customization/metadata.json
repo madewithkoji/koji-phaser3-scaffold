@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "name": "Koji P5 Scaffold",
-    "short_name": "P5 App",
-    "description": "A React scaffold modified specifically for Koji. Easily customizable at gokoji.com.",
-    "image": "https://images.koji-cdn.com/025a4ca3-2c61-4cf2-b821-55b7023c47dc/kojireact.png",
-    "icon": "https://objects.koji-cdn.com/025a4ca3-2c61-4cf2-b821-55b7023c47dc/94e432a7-951b-4b41-a726-d5d9fc66c533.ico",
+    "name": "Koji Phaser 3 Scaffold",
+    "short_name": "Phaser 3 App",
+    "description": "A Phaser 3 scaffold modified specifically for Koji. Easily customizable at gokoji.com.",
+    "image": "https://images.koji-cdn.com/d15a52b4-ffe4-470a-bc1d-c8ca7eab67dc/384a3540-856d-4674-a530-66ec9fa61043.png",
+    "icon": "https://images.koji-cdn.com/d15a52b4-ffe4-470a-bc1d-c8ca7eab67dc/cc0f80ee-657b-4453-b1af-1353be041ff2.png",
     "icon192": "",
     "icon512": "",
     "gaCode": ""

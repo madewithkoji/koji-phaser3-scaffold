@@ -1,6 +1,6 @@
 {
   "deploy": {
-    "subdomain": ".withkoji.com",
+    "subdomain": "koji-phaser3-test.withkoji.com",
     "frontend": {
       "output": "frontend/build",
       "commands": [
