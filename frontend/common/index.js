@@ -11,7 +11,7 @@
  *   can go here. If you want additional CSS files you can include them
  *   here.
  */
-import Koji from 'koji-tools';
+import Koji from '@withkoji/vcc';
 import './index.css';
 require('app/index.js');
 

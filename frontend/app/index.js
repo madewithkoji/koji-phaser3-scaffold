@@ -1,5 +1,5 @@
 import Phaser from "phaser";
-import Koji from 'koji-tools';
+import Koji from '@withkoji/vcc';
 
 const config = {
   type: Phaser.AUTO,
